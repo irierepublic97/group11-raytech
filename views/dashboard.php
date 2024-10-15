@@ -1,4 +1,8 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 session_start();
 
 
@@ -40,7 +44,6 @@ $booking_history = RepairBooking::getBookingHistoryForUser($_SESSION['user_id'])
                     <li><a href="../views/dashboard.php" class="active">Dashboard</a></li>
                     <li><a href="../actions/logout.php">Logout</a></li>
                 </ul>
-            </nav>
         </div>
     </header>
 
