@@ -7,8 +7,10 @@ ini_set('display_errors', 1);
 
 require_once 'Database.php';
 
-class RepairService {
-    public static function getAllServices() {
+class RepairService
+{
+    public static function getAllServices()
+    {
         $db = Database::getInstance();
         $conn = $db->getConnection();
 
