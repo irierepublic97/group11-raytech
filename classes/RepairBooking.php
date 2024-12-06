@@ -342,10 +342,20 @@ class RepairBooking
         return true;
     }
 
-    // Add a setter for preferred_date
-    public function setPreferredDate($new_date)
+    // Add setter methods for service_id, description, and preferred_date
+    public function setServiceId($service_id)
     {
-        $this->preferred_date = $new_date;
+        $this->service_id = $service_id;
+    }
+
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    public function setPreferredDate($preferred_date)
+    {
+        $this->preferred_date = $preferred_date;
     }
 
     // Getter methods

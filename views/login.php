@@ -8,6 +8,7 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +16,12 @@ session_start();
     <link rel="stylesheet" href="../assets/css/signin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
-    
+
     <div class="container">
         <div class="login-container">
-        <center><?php
+            <center><?php
             if (isset($_SESSION['success'])) {
                 echo "<p class='success'>" . $_SESSION['success'] . "</p>";
                 unset($_SESSION['success']);
@@ -31,7 +33,7 @@ session_start();
             ?></center>
             <div class="logo">
                 <img src="../assets/images/logo.jpg" alt="Raytech Logo">
-                <h1>Raytech Advanced <br> Repair Services</h1>
+                <h1>Printastick <br> Repair Services</h1>
             </div>
             <h2>Login</h2>
             <form action="../actions/process_login.php" method="post">
@@ -57,7 +59,7 @@ session_start();
         </div>
     </div>
     <script>
-        document.querySelector('.toggle-password').addEventListener('click', function() {
+        document.querySelector('.toggle-password').addEventListener('click', function () {
             const password = document.querySelector('#password');
             const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
             password.setAttribute('type', type);
@@ -66,4 +68,5 @@ session_start();
         });
     </script>
 </body>
+
 </html>
